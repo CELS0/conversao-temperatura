@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meupod-convert
+  labels: 
+    app: web
+spec:
+  containers:
+    - name: web
+      image: cels0/conversao-temperatura:v1
+      ports:
+        - containerPort: 8080
